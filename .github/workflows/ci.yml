@@ -1,0 +1,30 @@
+name: validar HTML
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+
+    jobs:
+    validar:
+    name: crear maquina virtual
+    runs-on: ubuntu-latest
+     
+
+     steps:
+     -  name: clonar codigo
+        uses: actions/checkout@v3
+
+        - name: instalar node
+          uses: actions/setup-node@v4
+          with:
+            node-version: 22
+
+
+            - name: validar codigo HTML
+              run: |
+               echo "inicio"
+               npx html-validate "**/*.html"
+               echo "fin"
