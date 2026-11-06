@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Estudiantes</title>
+</head>
+<body>
+
+    <h1>Registro de Estudiantes</h1>
+
+    <form>
+        <label>Nombre del estudiante:</label><br>
+        <input type="text" name="nombre"><br><br>
+
+        <label>Documento de identidad:</label><br>
+        <input type="text" name="documento"><br><br>
+
+        <label>Grado:</label><br>
+        <select name="grado">
+            <option value="">Seleccione un grado</option>
+            <option value="10">Grado 10</option>
+            <option value="11">Grado 11</option>
+        </select><br><br>
+
+        <label>Correo electrónico:</label><br>
+        <input type="email" name="correo"><br><br>
+
+        <label>Dirección:</label><br>
+        <input type="text" name="direccion"><br><br>
+
+        <label>Fecha de matrícula:</label><br>
+        <input type="date" name="fecha"><br><br>
+
+        <label>Jornada:</label><br>
+        <input type="radio" name="jornada" value="mañana"> Mañana
+        <input type="radio" name="jornada" value="tarde"> Tarde
+        <br><br>
+
+        <button type="submit">Guardar estudiante</button>
+        <button type="reset">Limpiar formulario</button>
+
+    </form>
+
+</body>
+</html>
